@@ -154,14 +154,16 @@ body{
 @media(max-width:380px){.wrap{width:min(100% - 22px,560px)}.wheel-wrap{width:255px;height:255px}}
 </style>
 </head>
+
 <body>
 
 <div class="hearts" id="hearts"></div>
 
 <main class="wrap">
+
   <header class="hero reveal">
     <div class="eyebrow">Nuestra historia</div>
-    <h1 class="serif">Humberto <span class="amp">&</span> Kathy</h1>
+    <h1 class="serif">Humberto <span class="amp">&</span> Katherine</h1>
     <p>Hay historias que no se cuentan con palabras solamente. Se sienten, se recuerdan y se siguen escribiendo todos los días.</p>
   </header>
 
@@ -192,6 +194,7 @@ body{
     <div class="seal">♥</div>
     <h2 class="title">Tengo algo que decirte</h2>
     <button class="btn" id="openLetter">Abrir carta</button>
+
     <div class="letter-text" id="letter">
       <p>
         Kathy, no sé exactamente en qué momento nuestra historia se volvió tan complicada. Hemos vivido cosas bonitas, momentos difíciles, hemos cometido errores y seguramente hay heridas que una página como esta no puede borrar.
@@ -256,6 +259,7 @@ body{
   <section class="section glass list-card reveal">
     <div class="kicker">Lo que todavía quiero vivir contigo</div>
     <h2 class="title">Nuestra lista</h2>
+
     <ul class="dreams">
       <li><span class="spark">✦</span><span>Viajar juntos con Luna y conocer lugares nuevos como familia.</span></li>
       <li><span class="spark">✦</span><span>Tener una escapada para nosotros dos, desconectarnos de todo y disfrutarnos.</span></li>
@@ -268,12 +272,54 @@ body{
   <section class="section reveal">
     <div class="kicker">Solo para ti</div>
     <h2 class="title">Vales de amor</h2>
+
     <div class="coupons">
-      <div class="coupon" data-coupon="masaje"><div class="icon">♥</div><div><small>Vale</small><b>Por un masaje</b><br><button class="redeem" onclick="redeemCoupon(this)">Canjear ❤️</button></div></div>
-      <div class="coupon" data-coupon="cena"><div class="icon">♥</div><div><small>Vale</small><b>Por una cena preparada por mí</b><br><button class="redeem" onclick="redeemCoupon(this)">Canjear ❤️</button></div></div>
-      <div class="coupon" data-coupon="cita"><div class="icon">♥</div><div><small>Vale</small><b>Por una cita sorpresa</b><br><button class="redeem" onclick="redeemCoupon(this)">Canjear ❤️</button></div></div>
-      <div class="coupon" data-coupon="pelicula"><div class="icon">♥</div><div><small>Vale</small><b>Por una noche de película juntos</b><br><button class="redeem" onclick="redeemCoupon(this)">Canjear ❤️</button></div></div>
-      <div class="coupon" data-coupon="dia"><div class="icon">♥</div><div><small>Vale</small><b>Por un día para nosotros</b><br><button class="redeem" onclick="redeemCoupon(this)">Canjear ❤️</button></div></div>
+
+      <div class="coupon" data-coupon="masaje">
+        <div class="icon">♥</div>
+        <div>
+          <small>Vale</small>
+          <b>Por un masaje</b><br>
+          <button class="redeem" onclick="redeemCoupon(this)">Canjear ❤️</button>
+        </div>
+      </div>
+
+      <div class="coupon" data-coupon="cena">
+        <div class="icon">♥</div>
+        <div>
+          <small>Vale</small>
+          <b>Por una cena preparada por mí</b><br>
+          <button class="redeem" onclick="redeemCoupon(this)">Canjear ❤️</button>
+        </div>
+      </div>
+
+      <div class="coupon" data-coupon="cita">
+        <div class="icon">♥</div>
+        <div>
+          <small>Vale</small>
+          <b>Por una cita sorpresa</b><br>
+          <button class="redeem" onclick="redeemCoupon(this)">Canjear ❤️</button>
+        </div>
+      </div>
+
+      <div class="coupon" data-coupon="pelicula">
+        <div class="icon">♥</div>
+        <div>
+          <small>Vale</small>
+          <b>Por una noche de película juntos</b><br>
+          <button class="redeem" onclick="redeemCoupon(this)">Canjear ❤️</button>
+        </div>
+      </div>
+
+      <div class="coupon" data-coupon="dia">
+        <div class="icon">♥</div>
+        <div>
+          <small>Vale</small>
+          <b>Por un día para nosotros</b><br>
+          <button class="redeem" onclick="redeemCoupon(this)">Canjear ❤️</button>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -289,11 +335,13 @@ body{
     <div class="kicker">La suerte decide</div>
     <h2 class="title">Nuestra ruleta</h2>
     <p style="color:var(--muted);font-size:14px">Gírala y aceptamos el plan que salga. 😌</p>
+
     <div class="wheel-wrap">
       <div class="pointer"></div>
       <canvas id="wheel" width="600" height="600"></canvas>
       <div class="hub">♥</div>
     </div>
+
     <button class="btn" id="spin">Girar</button>
     <div class="result" id="result"></div>
   </section>
@@ -302,22 +350,34 @@ body{
     <div class="kicker">Si llegaste hasta aquí… ❤️</div>
     <div class="bigheart">♥</div>
     <h2>Kathy</h2>
+
     <p style="line-height:1.8;color:#e8e1d8">
       Quería terminar esto sin hacerte ninguna pregunta y sin pedirte una respuesta.<br><br>
+
       Solo quería regalarte un pedacito de todo lo que todavía llevo por dentro.<br><br>
+
       Han pasado muchos años desde aquel <strong>26 de octubre de 2016</strong>. Hemos cambiado, hemos aprendido, hemos tenido momentos increíbles y también momentos que seguramente los dos hubiéramos querido vivir de otra manera.<br><br>
+
       Pero si algo tengo claro cuando miro hacia atrás, es que <strong>nuestra historia ha significado muchísimo para mí</strong>.<br><br>
+
       Y de nuestra historia nació la persona más importante de nuestras vidas: <strong>Luna. ❤️</strong><br><br>
+
       No sé qué nos tenga preparado el futuro. Tampoco quiero intentar resolverlo todo con una página.<br><br>
+
       Solo sé que, si la vida me da la oportunidad, me gustaría volver a crear momentos contigo. Volver a salir, reírnos, viajar, compartir como familia y quizás, poco a poco, descubrir una nueva versión de nosotros.<br><br>
+
       No quiero regresar al pasado.<br><br>
+
       <strong>Quisiera que algún día podamos construir algo mejor que lo que tuvimos.</strong><br><br>
+
       Gracias por estos años.<br>
       Gracias por nuestros recuerdos.<br>
       Gracias por Luna.<br>
       Y gracias por haber formado una parte tan importante de mi vida.<br><br>
+
       <strong style="color:var(--accent);font-size:1.25em">Te amo, Kathy. ❤️</strong>
     </p>
+
     <div class="signature">Con amor, Humberto</div>
   </section>
 
@@ -335,6 +395,7 @@ body{
     <p class="serif" style="font-size:28px;margin-top:12px">Nuestra historia continúa…</p>
     <p class="serif" style="font-size:23px;margin-top:8px">Humberto</p>
   </footer>
+
 </main>
 
 <script>
@@ -347,108 +408,186 @@ const START_DATE = new Date(2016, 9, 26, 0, 0, 0);
 
 function updateCounter(){
   const now = new Date();
+
   let y = now.getFullYear() - START_DATE.getFullYear();
   let m = now.getMonth() - START_DATE.getMonth();
   let d = now.getDate() - START_DATE.getDate();
 
   if(d < 0){
     const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0).getDate();
-    d += prevMonth; m--;
+    d += prevMonth;
+    m--;
   }
-  if(m < 0){ m += 12; y--; }
+
+  if(m < 0){
+    m += 12;
+    y--;
+  }
 
   const diff = Math.max(0, now - START_DATE);
+
   const sec = Math.floor(diff/1000)%60;
   const min = Math.floor(diff/60000)%60;
   const hr = Math.floor(diff/3600000)%24;
 
   document.getElementById("together").textContent =
     `${y} años, ${m} meses y ${d} días`;
+
   document.getElementById("clock").textContent =
     `${String(hr).padStart(2,"0")}h ${String(min).padStart(2,"0")}m ${String(sec).padStart(2,"0")}s`;
 }
-updateCounter(); setInterval(updateCounter,1000);
+
+updateCounter();
+setInterval(updateCounter,1000);
 
 // Carta
 document.getElementById("openLetter").addEventListener("click",()=>{
   const letter = document.getElementById("letter");
+
   letter.classList.toggle("open");
+
   document.getElementById("openLetter").textContent =
     letter.classList.contains("open") ? "Cerrar carta" : "Abrir carta";
 });
 
 // Corazones flotando
 const hearts = document.getElementById("hearts");
+
 for(let i=0;i<18;i++){
   const h=document.createElement("div");
+
   h.className="heart";
   h.textContent="♥";
   h.style.left=(Math.random()*100)+"%";
   h.style.fontSize=(10+Math.random()*16)+"px";
   h.style.animationDuration=(12+Math.random()*15)+"s";
   h.style.animationDelay=(-Math.random()*20)+"s";
+
   hearts.appendChild(h);
 }
 
 // Reveal on scroll
 const observer=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")});
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add("show");
+    }
+  });
 },{threshold:.12});
+
 document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 
 // Ruleta
-const options=["Cena","Cine","Helado","Atardecer","Playa","Sorpresa"];
+const options=[
+  "Cena",
+  "Cine",
+  "Helado",
+  "Atardecer",
+  "Playa",
+  "Sorpresa"
+];
+
 const canvas=document.getElementById("wheel");
 const ctx=canvas.getContext("2d");
-const W=canvas.width,H=canvas.height,cx=W/2,cy=H/2,r=285;
+
+const W=canvas.width;
+const H=canvas.height;
+const cx=W/2;
+const cy=H/2;
+const r=285;
+
 function drawWheel(){
   const slice=Math.PI*2/options.length;
+
   options.forEach((o,i)=>{
     const a=i*slice-Math.PI/2;
-    ctx.beginPath();ctx.moveTo(cx,cy);ctx.arc(cx,cy,r,a,a+slice);ctx.closePath();
-    ctx.fillStyle=i%2===0?"#173c2e":"#214b3a";ctx.fill();
-    ctx.strokeStyle="rgba(255,255,255,.12)";ctx.lineWidth=3;ctx.stroke();
 
-    ctx.save();ctx.translate(cx,cy);ctx.rotate(a+slice/2);
-    ctx.textAlign="right";ctx.fillStyle="#f7f1e8";
-    ctx.font="600 32px Inter";ctx.fillText(o,r-45,10);ctx.restore();
+    ctx.beginPath();
+    ctx.moveTo(cx,cy);
+    ctx.arc(cx,cy,r,a,a+slice);
+    ctx.closePath();
+
+    ctx.fillStyle=i%2===0 ? "#173c2e" : "#214b3a";
+    ctx.fill();
+
+    ctx.strokeStyle="rgba(255,255,255,.12)";
+    ctx.lineWidth=3;
+    ctx.stroke();
+
+    ctx.save();
+    ctx.translate(cx,cy);
+    ctx.rotate(a+slice/2);
+
+    ctx.textAlign="right";
+    ctx.fillStyle="#f7f1e8";
+    ctx.font="600 32px Inter";
+    ctx.fillText(o,r-45,10);
+
+    ctx.restore();
   });
 }
+
 drawWheel();
-let rotation=0, spinning=false;
+
+let rotation=0;
+let spinning=false;
+
 document.getElementById("spin").addEventListener("click",()=>{
-  if(spinning)return; spinning=true;
+  if(spinning)return;
+
+  spinning=true;
+
   const chosen=Math.floor(Math.random()*options.length);
   const sliceDeg=360/options.length;
-  const target=360*6 + (360-(chosen*sliceDeg+sliceDeg/2));
+
+  const target=
+    360*6 +
+    (360-(chosen*sliceDeg+sliceDeg/2));
+
   rotation += target;
+
   canvas.style.transform=`rotate(${rotation}deg)`;
+
   document.getElementById("result").textContent="Girando...";
+
   setTimeout(()=>{
-    document.getElementById("result").textContent=`La ruleta decidió: ${options[chosen]} ♥`;
+    document.getElementById("result").textContent=
+      `La ruleta decidió: ${options[chosen]} ♥`;
+
     spinning=false;
   },4050);
 });
 
-// Vales de amor: se guardan en este navegador
+// Vales de amor
 function redeemCoupon(btn){
   const coupon=btn.closest(".coupon");
   const id=coupon.dataset.coupon;
+
   if(coupon.classList.contains("redeemed")) return;
+
   if(confirm("¿Segura que quieres usar este vale? ❤️")){
     localStorage.setItem("kathy_coupon_"+id,"1");
+
     coupon.classList.add("redeemed");
+
     btn.textContent="Canjeado ❤️";
     btn.disabled=true;
   }
 }
+
 document.querySelectorAll(".coupon").forEach(c=>{
   if(localStorage.getItem("kathy_coupon_"+c.dataset.coupon)==="1"){
     c.classList.add("redeemed");
+
     const b=c.querySelector(".redeem");
-    if(b){b.textContent="Canjeado ❤️";b.disabled=true;}
+
+    if(b){
+      b.textContent="Canjeado ❤️";
+      b.disabled=true;
+    }
   }
 });
 </script>
+
 </body>
 </html>
