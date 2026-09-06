@@ -1693,6 +1693,7 @@ function redeemCoupon(btn){
   const id =
     coupon.dataset.coupon;
 
+  // Si ya fue canjeado, permite restaurarlo
   if(
     coupon
     .classList
@@ -1700,9 +1701,34 @@ function redeemCoupon(btn){
       "redeemed"
     )
   ){
+
+    if(
+      confirm(
+        "¿Quieres restaurar este vale para poder usarlo otra vez? ❤️"
+      )
+    ){
+
+      localStorage.removeItem(
+        "kathy_coupon_" + id
+      );
+
+      coupon
+      .classList
+      .remove(
+        "redeemed"
+      );
+
+      btn.textContent =
+        "Canjear ❤️";
+
+      btn.disabled =
+        false;
+    }
+
     return;
   }
 
+  // Si todavía no ha sido canjeado, confirma antes de usarlo
   if(
     confirm(
       "¿Segura que quieres usar este vale? ❤️"
@@ -1723,8 +1749,9 @@ function redeemCoupon(btn){
     btn.textContent =
       "Canjeado ❤️";
 
+    // Se mantiene activo para que pueda tocarse otra vez y restaurarse
     btn.disabled =
-      true;
+      false;
 
   }
 
@@ -1765,8 +1792,9 @@ document
         b.textContent =
           "Canjeado ❤️";
 
+        // No se desactiva: así puede tocarse para restaurar el vale
         b.disabled =
-          true;
+          false;
 
       }
 
